@@ -5,21 +5,21 @@
 document.addEventListener('DOMContentLoaded', () => {
 console.log('Page loaded!');
 
-```
+
 // Example: Add a greeting based on time of day
 const greeting = getGreeting();
 displayGreeting(greeting);
 
 // Example: Add a button click counter
 setupClickCounter();
-```
+
 
 });
 
 function getGreeting() {
 const hour = new Date().getHours();
 
-```
+
 if (hour < 12) {
     return 'Good morning!';
 } else if (hour < 18) {
@@ -27,7 +27,7 @@ if (hour < 12) {
 } else {
     return 'Good evening!';
 }
-```
+
 
 }
 
@@ -43,13 +43,13 @@ const button = document.getElementById('counter-btn');
 const display = document.getElementById('count');
 let count = 0;
 
-```
+
 if (button && display) {
     button.addEventListener('click', () => {
         count++;
         display.textContent = count;
     });
 }
-```
+
 
 }
